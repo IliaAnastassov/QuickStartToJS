@@ -1,8 +1,8 @@
-body {
+.background {
     background-color: #1a1a1a;
 }
 
-h1 {
+.mainHeader {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: lightslategray;
     font-weight: bold;
