@@ -20,4 +20,36 @@ function AgePrompt() {
     alert('Sorry, you are not old enough for porn! :(. See you back in ' + yearsTillAdult + ' years')
   }
 }
-AgePrompt();
+function CapitalPrompt() {
+  var answer = prompt('What is the capital of New York?');
+  if (answer === 'Albany') {
+    alert('You are correct!');
+  } else {
+    alert('Sorry, ' + answer + ' is not the capital of New York.');
+  }
+}
+function FavoriteColorPrompt() {
+  var favoriteColor = prompt('What is your favorite color?');
+  if (favoriteColor === 'grey') {
+    alert('You are so gay!');
+  } else if (favoriteColor === 'pink') {
+    alert('I wish your balls shrink!');
+  } 
+  else if (favoriteColor === 'red') {
+    alert('You are as gay as uncle Ted!');
+  } 
+  else {
+    alert('Meeeeh.');
+  }
+}
+function FizzBuzz() {
+  var number = Math.round(Math.random() * 5);
+  if (number % 3 === 0) {
+    alert('fizz');
+  } else if (number % 5 === 0) {
+    alert('buzz');
+  } else {
+    console.log(number);
+  }
+}
+FizzBuzz();
