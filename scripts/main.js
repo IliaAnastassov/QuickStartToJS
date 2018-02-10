@@ -68,4 +68,21 @@ function FizzBuzz(min, max) {
     console.log(number);
   }
 }
-FizzBuzz();
+
+// Zombie Apocalypse game
+function ZombieApocalypse() {
+  alert("Hello, this is a zombie apocalypse game!");
+  var weapon = prompt("Choose your weapon");
+
+  alert(weapon + " " + "is a good choice");
+  alert("OMG you have encountered a zombie!");
+  alert("Let\"s FIGHT!");
+
+  var chanceOfWin = Math.round(Math.random());
+  if (chanceOfWin === 1) {
+    alert("Huuray! You killed the nasty zombie with your" + " " + weapon + "! You WON!!!")
+  } else {
+    alert("Ouups, you got bitten and it\"s just a matter of time before you and up as a nasty zombie yourself! You lost...");
+  }
+}
+ZombieApocalypse();
