@@ -42,12 +42,11 @@ em {
     visibility: visible;
     opacity: 1;
 }
-
 .hover-hint pre {
     min-width: 200px;
     max-width: 400px;
-    
 }
+
 /*---- Syntax Colors -----*/
 .orange {
     color: #ffa500;
