@@ -77,6 +77,6 @@ function ZombieApocalypse() {
   if (chanceOfWin === 1) {
     alert("Huuray! You killed the nasty zombie with your" + " " + weapon + "! You WON!!!")
   } else {
-    alert("Ouups, you got bitten and it\"s just a matter of time before you and up as a nasty zombie yourself! You lost...");
+    alert("Ouups, you got bitten and it\"s just a matter of time before you end up as a nasty zombie yourself! You lost...");
   }
 }
