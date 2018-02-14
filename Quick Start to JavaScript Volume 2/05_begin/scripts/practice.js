@@ -1,11 +1,13 @@
 var i = 0;
 
-do {
+while (i < 10) {
   console.log(i);
   i++;
-} while (i < 11);
+};
 
-while(i < 11){
-  console.log(i);
-  i++;
-}
+var j = 0;
+
+do {
+  console.log(j);
+  j++;
+} while (j < 10);
