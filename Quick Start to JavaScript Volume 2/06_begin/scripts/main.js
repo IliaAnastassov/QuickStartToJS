@@ -4,3 +4,5 @@ function sayHello(name) {
 
 sayHello("Scott");
 sayHello("Vanilla");
+sayHello();
+sayHello(1 + 1);
