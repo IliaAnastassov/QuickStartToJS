@@ -29,6 +29,6 @@ Arrays for lists
 Need multiple random numbers so a randomNumber function
 
 -----------------------------------------------
-Remember: There are many ways to create things with code! The most important part is to write it and get it working.  If you can't get something to work, try making it simpler.  
-After, look for ways you might improve your code! 
+Remember: There are many ways to create things with code! The most important part is to write it and get it working.  
+If you can't get something to work, try making it simpler. After, look for ways you might improve your code! 
 */
