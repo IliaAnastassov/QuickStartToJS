@@ -32,3 +32,39 @@ Need multiple random numbers so a randomNumber function
 Remember: There are many ways to create things with code! The most important part is to write it and get it working.  
 If you can't get something to work, try making it simpler. After, look for ways you might improve your code! 
 */
+
+function randomNumber(min, max) {
+    if (min > max) {
+        // Swap values of min and max
+        min ^= max;
+        max ^= min;
+        min ^= max;
+    }
+
+    return Math.round(Math.random() * (max - min)) + min;
+}
+
+// TODO: Replace scenarios with actual ones
+var scenarioOne = "This is scenario one";
+var scenarioTwo = "This is scenario two";
+var scenarioThree = "This is scenario three";
+var scenarioFour = "This is scenario four";
+
+var scenarios = [scenarioOne, scenarioTwo, scenarioThree, scenarioFour];
+var scenarioIndex = randomNumber(0, scenarios.length - 1);
+var scenario = scenarios[scenarioIndex];
+alert(scenario);
+alert("Suddenly you encounter a zombie! You start searching for a weapon to fight it.")
+
+var weapons = ["axe", "hammer", "sword", "pistol", "rifle", "bat", "broken bottle", "knife", "machine gun", "granade"];
+var weaponIndex = randomNumber(0, weapons.length - 1);
+var weapon = weapons[weaponIndex];
+alert("You found a " + weapon + "!");
+alert("You start fighting the zombie with it...");
+
+var outcomeNumber = randomNumber(0, 100);
+if (outcomeNumber > 33) {
+    alert("You killed the zombie! You won!!!");
+} else {
+    alert("You got bitten. You loose.");
+}
