@@ -33,38 +33,29 @@ Remember: There are many ways to create things with code! The most important par
 If you can't get something to work, try making it simpler. After, look for ways you might improve your code! 
 */
 
-function randomNumber(min, max) {
-    if (min > max) {
-        // Swap values of min and max
-        min ^= max;
-        max ^= min;
-        min ^= max;
-    }
-
-    return Math.round(Math.random() * (max - min)) + min;
+function randomNumber(range) {
+    return Math.round(Math.random() * range);
 }
 
-// TODO: Replace scenarios with actual ones
-var scenarioOne = "This is scenario one";
-var scenarioTwo = "This is scenario two";
-var scenarioThree = "This is scenario three";
-var scenarioFour = "This is scenario four";
+var scenarios = [
+    "You wake up in a hospital. It's eerily quiet. You tiptoe to the door and peek out.",
+    "You are standing in an open field west of a white house with a boarded front door. There is a small mailbox here.",
+    "Desperate times call for desperate measures. You see a small convinience store up ahead and decide to loot it for goods.",
+    "In a search for tools and weapons, you are sneaking into a fire station. You try the front door, but it's locked, so you use the window next to the door."
+];
 
-var scenarios = [scenarioOne, scenarioTwo, scenarioThree, scenarioFour];
-var scenarioIndex = randomNumber(0, scenarios.length - 1);
-var scenario = scenarios[scenarioIndex];
-alert(scenario);
-alert("Suddenly you encounter a zombie! You start searching for a weapon to fight it.")
+alert(scenarios[randomNumber(scenarios.length - 1)]);
 
-var weapons = ["axe", "hammer", "sword", "pistol", "rifle", "bat", "broken bottle", "knife", "machine gun", "granade"];
-var weaponIndex = randomNumber(0, weapons.length - 1);
-var weapon = weapons[weaponIndex];
-alert("You found a " + weapon + "!");
-alert("You start fighting the zombie with it...");
+var weapons = ["axe", "hammer", "sword", "pistol", "rifle", "baseball bat", "broken bottle", "knife", "machine gun", "shovel"];
+var weapon = weapons[randomNumber(weapons.length - 1)];
 
-var outcomeNumber = randomNumber(0, 100);
-if (outcomeNumber > 33) {
-    alert("You killed the zombie! You won!!!");
+alert("You start searching for a weapon. After surveying your surroundings you find nottice and grab a " + weapon + ".");
+
+alert("Suddenly a zombie bursts through the door! You ready your " + weapon + " and advance towards the zombie.");
+
+var outcomeNumber = randomNumber(2);
+if (outcomeNumber === 0) {
+    alert("You got bitten. You lose.");
 } else {
-    alert("You got bitten. You loose.");
+    alert("You killed the zombie with the " + weapon + "! You won!!!");
 }
